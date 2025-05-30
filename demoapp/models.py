@@ -30,6 +30,7 @@ class Projects(models.Model):
     _id = models.CharField(max_length=24, default=lambda: str(ObjectId()), primary_key=True)
     image = models.ImageField(upload_to="images/", blank=True, null=True)
     description = models.CharField(max_length=1000)
+    link = models.URLField(max_length=500)
 
     def __str__(self):
         return self.description if self.description else "No description"

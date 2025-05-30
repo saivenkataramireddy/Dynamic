@@ -53,8 +53,10 @@
         {% if projects %}
             {% for project in projects %}
                 <div class="proj card">
-                    <img src="{{ project.image.url }}" alt="Project Image">
-                    <p>Description: {{ project.description }}</p>
+                    <img src="{{ project.image.url }}" alt="Project Image"><br><br>
+                    <button class="project-btn">
+                    <a href="{{ project.link }}" target="_blank" rel="noopener noreferrer">🔗 View Project</a>
+                    </button>
                 </div>
             {% endfor %}
         {% else %}
