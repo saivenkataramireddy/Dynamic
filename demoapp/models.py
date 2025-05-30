@@ -22,6 +22,8 @@ class Blog(models.Model):
     iam = models.CharField(max_length=500)
     resume = models.FileField(upload_to="images/", blank=True, null=True)
     about_you = models.TextField()
+    icon = models.ImageField(upload_to="images/", blank=True, null=True)
+    nav_image = models.ImageField(upload_to="images/", blank=True, null=True)
 
     def __str__(self):
         return self.name if self.name else "Unnamed Blog"
