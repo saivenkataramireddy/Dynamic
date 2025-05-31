@@ -8,21 +8,12 @@
     <title>K.S.V.Rami Reddy</title>
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    {% if blog.icon %}
-        <link rel="icon" href="{{ blog.icon.url }}">
-    {% endif %}
-
-
 </head>
 <body>
     <script src="{% static 'js/index.js' %}"></script>
 
     <nav class="navbar">
-        <div class="logo">
-            {% if blog.nav_image %}
-                <img src="{{ blog.nav_image.url }}" alt="Nav Image" height="60px" width="60px">
-            {% endif %}
-        </div>
+        <h2>K.S.V.Rami Reddy</h2>
         <div class="menu-icon" onclick="toggleMenu()">☰</div>
         <ul class="nav-links">
             <li><a href="#home" class="active">Home</a></li>
